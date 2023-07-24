@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Elon Poop",
+    "version": "1.1",
+    "description": "Replaces Elon Musk name on websites with a poop emoji.",
+    "icons": {
+      "240": "Icons/icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["elons.js", "jquery.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "permissions": [
+        "*://*/*"
+      ]
+      
+  }
+  
